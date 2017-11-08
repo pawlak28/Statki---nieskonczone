@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Statki</title>
+	<meta charset="utf-8"/>
+
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+
+	<script type="text/javascript" src="javascript.js"></script>
+
+</head>
+<body>
+
+
+	<div id="background-game">
+		
+		<div id="score">
+			
+			<div id="score_blue"></div>
+			<div id="score_red"></div>
+
+		</div>
+
+		<div id="game">
+
+			<div id="title"></div>
+
+			<div style="float: left;">
+
+				<div id="new-game" class="button" onclick="add()"><a>Nowa Gra</a></div>
+				<div id="settings" class="button"><a>Ustawienia</a></div>
+				<div id="author" class="button"><a>Autor</a></div>
+
+			</div>
+
+			<div id="new-game-settings">
+
+				<div id="exit">X</div>
+
+				<div>
+				
+					Wybierz poziom trudności
+
+					<form>
+					
+						<input type="radio" name="level" value="0">Easy
+						<br/>
+						<input type="radio" name="level" value="1">Medium
+						<br/>
+						<input type="radio" name="level" value="2">Hard
+						
+					</form>
+
+				</div>
+
+				<div>
+					
+					Wybierz typ rozgrywki
+
+					<form>
+					
+						<input type="radio" name="gametype" value="3">Do zniszczenia
+						<br/>
+						<input type="radio" name="gametype" value="4">Do określonych punktów
+						<br/>
+						<input type="radio" name="gametype" value="5">Ilość trafień
+						
+					</form>
+
+				</div>
+
+				<div class="button second" onclick="startbutton()">Graj</div>
+				<div id="wynik2"></div>
+
+			</div>
+
+			<div id="your-ships"></div>
+			<div id="enemy-ships"></div>
+
+		</div>
+
+		<div id="information-box">
+			
+		</div>
+
+	</div>
+
+</body>
+</html>

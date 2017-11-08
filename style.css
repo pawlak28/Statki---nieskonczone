@@ -1,0 +1,206 @@
+body
+{
+	background-image: url("water2.gif");
+
+}
+
+#title
+{
+	background-image: url("battleship-title.png");
+	width: 800px;
+	height: 250px;
+	margin-left: 220px;
+	margin-top: -70px;
+}
+
+.button
+{
+	background-color: lightgray;
+	border: 5px outset silver;
+	border-radius: 8px;
+	width: 240px;
+	height: 60px;
+	font-size: 46px;
+	color: gray;
+	text-align: center;
+	padding-bottom: : 30px;
+	cursor: pointer;
+
+}
+
+.button:hover
+{
+	border: 5px inset silver;
+}
+
+a
+{
+	text-decoration: none;
+	color: gray;
+	display: block;
+
+}
+
+a:hover
+{
+	color: darkred;
+}
+
+#new-game
+{
+	margin-left: 480px;
+	margin-top: 20px;
+}
+
+#settings
+{
+	margin-left: 480px;
+	margin-top: 40px;
+}
+
+#author
+{
+	margin-left: 480px;
+	margin-top: 40px;
+}
+
+#new-game-settings
+{
+	border-radius: 8px;
+	border: 5px outset silver;
+	background-color: lightgray;
+	width: 300px;
+	height: 280px;
+	margin-left: 800px;
+	margin-top: 20px;
+	opacity: 0;
+
+}
+
+.new-game-animation
+{
+	animation-name:wysun;
+	animation-duration: 1s;
+	animation-iteration-count:1s;
+}
+
+@keyframes wysun
+{
+	0% {margin-left: 900px;opacity: 0;}
+	100% {margin-left: 800px;opacity: 1;}
+}
+
+.changing-screen
+{
+	animation-name:przyciemnienie;
+	animation-duration: 1s;
+	animation-iteration-count:1s;
+}
+
+@keyframes przyciemnienie
+{
+	0% {background-color: transparent;}
+	100% {background-color: black;}
+}
+
+#exit
+{
+	background-color: lightgray;
+	width: 25px;
+	height: 30px;
+	color: gray;
+	font-size: 22px;
+	text-align: center;
+	float: right;
+	cursor: pointer;
+}
+
+#exit:hover
+{
+	color: darkred;
+}
+
+
+.second
+{
+	
+	width: 120px;
+	height: 30px;
+	font-size: 23px;
+	margin-left: 10px;
+	margin-top: 10px;
+	border: 3px solid silver;
+
+}
+
+.second:hover
+{
+	border: 3px solid darkred;
+	color: darkred;
+}
+
+/* //////////////////////////////////////////GAME HTML///////////////////////////////////////////*/
+
+.score
+{
+	width: 50px;
+	height: 45px;
+	background-color: lightgray;
+	color: blue;
+	font-size: 36px;
+	text-align: center;
+	float: left;
+	border-radius: 8px;
+}
+
+#your-ships
+{
+	margin-top: 40px;
+	margin-left: 100px;
+	float: left;
+}
+
+#enemy-ships
+{
+	margin-top: 40px;
+	margin-left: 220px;
+	float: left;
+}
+
+.field
+{
+	width: 39px;
+	height: 39px;
+	float: left;
+	background-color: transparent;
+	border: 1px solid lightgray;
+	opacity: 0.5;
+
+}
+.field:hover
+{
+	background-color: #f9f9f9;
+	opacity: 0.3;
+	
+}
+
+#information
+{
+	margin-left: 37%;
+	float: left;
+	height: 40px;
+	width: 200px;
+	background-color: lightgray;
+	text-align: center;
+	border-radius: 8px;
+	color: darkviolet;
+	font-size: 20px;
+	padding-top: 5px;
+}
+
+.disable-event
+{
+	pointer-events: none;
+	background-color: black;
+	opacity: 0.7;
+}
